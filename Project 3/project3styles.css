@@ -1,0 +1,337 @@
+/*******w************
+
+    Project 3
+    Name: Karl Santos
+    Date: April 20, 2022
+    Description: Project 3 WEBD-1008
+
+********************/
+html, body, section, p, header, footer, div
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body
+{
+    background-color: #202634;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+form
+{
+    width: 795px;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 3px 8px 8px 8px;
+    margin: 0px auto;
+}
+
+header
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    height: 50px;
+}
+
+header h1
+{
+    color: #EC0F13;
+    font-weight: bolder;
+    text-align: center;
+}
+
+nav
+{
+    position: relative;
+    margin: 0px auto;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+header nav
+{
+    background-color: #3B4760;
+}
+
+header nav ul
+{
+    margin: 0px;
+    margin-top: 14px;
+    padding: 0px;
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;   
+}
+
+header nav ul a
+{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+header nav ul li
+{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none;
+    height: 25px;
+    line-height: 22px;
+}
+
+header nav ul li:not(:last-of-type):after
+{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+a:hover
+{
+    color: #d41014;
+}
+
+a:active
+{
+    color: blueviolet;
+}
+
+.heading-text
+{
+    font-size: 30px;
+    text-align: center;
+    top: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+footer
+{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+    border-top: 1px solid #CCCCCC;
+}
+
+footer ul
+{
+    padding-top: 20px;
+    list-style: none;
+    margin: 0px;
+}
+
+footer ul li
+{
+    display: inline-block;
+}
+
+footer ul li a
+{
+    text-decoration: none;
+    color: #006699;
+}
+
+footer ul li:not(:last-of-type):after
+{
+    content: " | ";
+    padding: 0px 3px;
+    color: #000;
+}
+
+/** HOME styles **/
+.about-heading
+{
+    background-image: url('images/ff7re.jpg');
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 65px;
+}
+
+#about-content
+{
+    margin-top: 75px;
+}
+
+#about-content h2
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px 0px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+#about-content p
+{
+    width: 98%;
+    padding-left: 15px;
+}
+
+img.logo
+{
+    max-width: 300px;
+}
+
+/** REVIEWS styles **/
+.reviews-heading
+{
+    background-image: url('images/eldenring.jpg');
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    height: 200px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 65px;
+}
+
+#content
+{
+    display: flex;
+    margin-top: 75px;
+}
+
+#content h2
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px 0px;
+    padding-left: 15px;
+}
+
+#content article
+{
+    flex: 3;
+}
+
+#content p
+{
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+article img.malenia, img.thunderjaw
+{
+    float: right;
+}
+
+figure
+{
+    float: right;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin: 5px;
+}
+
+figcaption
+{
+    font-size: 14px;
+    padding: 5px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.video
+{
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+/** CONTACT styles **/
+.contact-heading
+{
+    background-image: url('images/xenoblade.jpg');
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    height: 200px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 65px;
+}
+
+#contact-content
+{
+    margin-top: 75px;
+}
+
+
+#contact-content h2
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px 0px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+#contact-content p
+{
+    width: 100%;
+    padding-left: 15px;
+}
+
+#contact-content ul, li
+{
+    list-style: none;
+}
+
+label
+{
+    width: 100px;
+    padding-left: 10px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+input
+{
+    width:200px;
+    height:18px;
+    padding-left: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.inputError
+{
+    color: red;
+    width: 100px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+textarea
+{
+    margin-left: 10px;
+}
+
+button
+{
+    margin-left: 10px;
+}

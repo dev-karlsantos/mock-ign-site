@@ -1,0 +1,81 @@
+<!-------w-----------
+
+    Project 3
+    Name: Karl Santos
+    Date: April 20, 2022
+    Description: Project 3 WEBD-1008
+	
+-------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IGN Video Game Reviews</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="project3styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <script src="ign.js"></script>     
+    </head>
+    <body>
+    <form id="contact-page" action="index.html" method="post">
+        <header>
+            <div id="header">
+                <h1>IGN Video Game Reviews</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="contact-heading">
+            <div class="heading-text"><h1>Contact Support</h1></div>
+        </div>
+        <section>
+            <div id="contact-content">
+                <h2>Contact Support</h2>
+                <p>If you have any questions or comments in regards to IGN, please fill out this form.</p><br><br>
+                <ul>
+                    <li>
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" name="fullname" type="text" />
+                        <p class="inputError" id="fullname_error">* Required field</p>
+                    </li>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" type="tel" />
+                        <p class="inputError" id="phone_error">* Required field</p>
+                        <p class="inputError" id="phoneformat_error">* Invalid phone number</p>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text" />
+                        <p class="inputError" id="email_error">* Required field</p>
+                        <p class="inputError" id="emailformat_error">* Invalid email address</p>
+                    </li>
+                    <li>
+                        <label for="comment">Questions/Comments</label><br>
+                        <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+                        <p class="inputError" id="comment_error">* Required field</p><br>
+                    </li>
+                </ul>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>   
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </form>
+    </body>
+</html>
